@@ -1,0 +1,72 @@
+/* Reset and Base */
+body {
+  font-family: Arial, sans-serif;
+  background: #b71c1c; /* deep red background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container box */
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  width: 320px;
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  color: #111;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Input box */
+input {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Button */
+button {
+  padding: 10px 15px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+/* Weather result */
+.result {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+/* Status colors */
+.success {
+  color: #2e7d32; /* green */
+}
+
+.error {
+  color: #b71c1c; /* same red */
+}
+
+.loading {
+  color: #ff8f00; /* orange */
+}
