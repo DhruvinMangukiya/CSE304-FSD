@@ -1,0 +1,77 @@
+/* sidebar.css */
+
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  background-color: #d66a6a;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.sidebar {
+  width: 0;
+  background-color: #c9b6f5;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sidebar.open {
+  width: 200px;
+  padding-left: 20px;
+}
+
+.sidebar button {
+  display: block;
+  background: transparent;
+  border: none;
+  color: #333;
+  font-size: 18px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.sidebar button.active {
+  border-bottom: 2px solid red;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 80px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.searchbar {
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+}
